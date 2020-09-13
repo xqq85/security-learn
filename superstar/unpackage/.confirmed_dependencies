@@ -1,0 +1,90 @@
+{
+	"models/login/login.html": {
+		"refer": [
+			"models/main/main.html",
+			"models/register/register.html",
+			"models/login/main.html",
+			"models/login/unlock.html",
+			"models/login/forget_password.html",
+			"models/login/reg.html"
+		]
+	},
+	"models/main/main.html": {
+		"resources": [
+			"models/course/course.html",
+			"models/notebook/notebook.html",
+			"models/mine/mine.html",
+			"models/message/message.html"
+		],
+		"refer": [
+			"models/mine/mine.html",
+			"models/course/course.html",
+			"models/message/message.html",
+			"models/notebook/notebook.html",
+			"models/exam-list/exam-list.html",
+			"models/examlist/examlist.html",
+			"models/notice/notice.html"
+		]
+	},
+	"models/mine/mine.html": {
+		"refer": [
+			"models/account/account.html",
+			"models/setting/setting.html"
+		]
+	},
+	"models/setting/setting.html": {
+		"refer": [
+			"models/account/account.html"
+		]
+	},
+	"models/notebook/notebook.html": {
+		"refer": [
+			"models/person-notes/person-notes.html"
+		]
+	},
+	"models/course/course.html": {
+		"refer": [
+			"models/course-detail/course-detail.html",
+			"models/sign/sign.html",
+			"models/chapter-detail/chapter-detail.html"
+		]
+	},
+	"models/register/register.html": {
+		"refer": [
+			"models/login/login.html"
+		]
+	},
+	"models/course-detail/course-detail.html": {
+		"refer": [
+			"models/chapter-detail/chapter-detail.html",
+			"models/video/video.html"
+		]
+	},
+	"models/login/main.html": {
+		"refer": [
+			"models/login/setting.html"
+		]
+	},
+	"models/login/unlock.html": {
+		"refer": [
+			"models/login/login.html"
+		]
+	},
+	"models/examlist/examlist.html": {
+		"refer": [
+			"models/exam-detail/exam-detail.html",
+			"models/exam/exam.html",
+			"models/paper/paper.html"
+		]
+	},
+	"models/exam/exam.html": {
+		"refer": [
+			"models/exam-detail/exam-detail.html"
+		]
+	},
+	"models/notice/notice.html": {
+		"refer": [
+			"models/notice/noticelist.html"
+		]
+	}
+}

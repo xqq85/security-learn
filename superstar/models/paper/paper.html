@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="paper.css"/>
+		<script src="../../js/mui.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">生成试卷</h1>
+		</header>
+		
+		<div class="mui-content">
+			<form id="exam-message" class="mui-input-group">
+				<div class="mui-input-row">
+					<label>考试时间</label>
+					<input class="time" type="datetime-local" placeholder="请输入考试时间！">
+				</div>
+				<div class="mui-input-row">
+					<label>考试题目</label>
+					<input class="title" type="text" placeholder="请输入考试题目！">
+				</div>
+			</form>
+			<h5 class="bank">题库</h5>
+			
+			<div id="assemble">
+				<form class="mui-input-group">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<label class="theme">主题</label>
+						<label class="theme">题目</label>
+						<input name="checkbox" value="Item1" type="checkbox" disabled="disabled">
+					</div>
+					<!--<div class="subject mui-input-row mui-checkbox mui-left">
+						<label class="theme">软件工程</label>
+						<label class="theme">123</label>
+						<input name="checkbox" value="Item2" type="checkbox">
+					</div>
+					<div class="subject mui-input-row mui-checkbox mui-left">
+						<label class="theme">软件工程</label>
+						<label class="theme">123</label>
+						<input name="checkbox" value="Item3" type="checkbox">
+					</div>
+					<div class="subject mui-input-row mui-checkbox mui-left">
+						<label class="theme">软件工程</label>
+						<label class="theme">123</label>
+						<input name="checkbox" value="Item4" type="checkbox">
+					</div>-->
+				</form>
+			</div>
+			<div class="button">
+				<button id="button1" type="button" class="mui-btn mui-btn-blue">组卷</button>
+			</div>
+		</div>
+		
+	<script src="paper.js"></script>
+	</body>
+</html>

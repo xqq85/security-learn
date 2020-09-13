@@ -1,0 +1,42 @@
+html,body{
+	background-color: #FFFFFF;
+}
+
+.mui-content{
+	background-color: white;
+}
+
+.exam{
+	margin-top: 60px;
+}
+.exam-massage{
+	display: inline-block;
+	margin-left: 25%;
+	margin-right: 25%px;
+	margin-left: 81.5px;
+}
+.image{
+	float: left;
+	border-radius: 15px;
+	width: 50px;
+	height: 50px;
+}
+.exam-detail-message{
+	float: left;
+	margin-left: 20px;
+}
+.line{
+	width: 140px;
+	border-color: cornflowerblue;
+}
+.name{
+	color: #000000;
+}
+
+.number{
+	color: #000000;
+}
+.button{
+	display: block;
+	margin: auto;
+}

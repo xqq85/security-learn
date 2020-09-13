@@ -1,0 +1,140 @@
+html,
+body,
+.mui-content {
+	background-color: #FFFFFF;
+}
+
+#author_message {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.author {
+	float: left;
+}
+
+.author_name {
+	float: left;
+	position: relative;
+	left: 10px;
+}
+
+.course_message {
+	float: none;
+	margin: 10px;
+	display: block;
+}
+
+.course_margin_top {
+	margin-top: 40px;
+}
+
+.comment-title {
+	margin-top: 30px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.thumb {
+	float: right;
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+}
+
+.mui-table-view-cell a.active{
+	color: dodgerblue !important;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	color: #c8c7cc;
+	margin: 0px;
+}
+
+.comment-message{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.comment-input{
+	position: fixed;
+	bottom: 0px;
+	height: 40px;
+	width: 100%;
+	border-top: 1px solid #c8c7cc;
+	background-color: #f7f7f7;
+}
+
+.comment-input-picture{
+	margin-left: 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #c8c7cc;
+	margin-top: 5px;
+	float: left;
+	background-color: #FFFFFF;
+}
+.comment-input-message{
+	margin-top: 5px;
+	left: 50%;
+	margin-left: 50px;
+	float: left;
+	width: 150px;
+	height: 30px;
+	border: 1px solid #c8c7cc;
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	text-align: center;
+}
+
+.mui-icon {
+    font-size: 28px;
+}
+
+#bottomPopover{
+	background-color: #FFFFFF;
+}
+
+.comment-bottom{
+	height: 70px;
+	margin-top: 10px;
+	text-align: center;
+	color: #333;
+}
+#comment-button{
+	margin-top: -12px;
+	float: right;
+	margin-right: 15px;
+	margin-bottom: 7px;
+}
+#comment-button0{
+	margin-top: -12px;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 7px;
+	border-radius: 50%;
+}
+
+textarea {
+    border: 0px;
+    border-bottom: 0.5px solid #000000;
+    border-radius: 0px;
+}
+
+.mui-table-view-cell.mui-active {
+    background-color: #FFFFFF;
+}
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content {
+     margin: 0px;
+}
+
+.mui-table-view-chevron .mui-table-view-cell {
+    padding-right: 15px;
+}
+
+.mui-table-view-chevron .mui-table-view-cell > a:not(.mui-btn) {
+    margin-right: 0px;
+}

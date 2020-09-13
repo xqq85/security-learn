@@ -1,0 +1,10 @@
+.aoyunlan-wrapper .header { background: url(http://3gimg.qq.com/wap30/img/info3/zhuanti_header_olympic.jpg) no-repeat center 0, url(http://3gimg.qq.com/wap30/img/info3/zt_olympictop_bg.jpg) repeat-x, #14A3DD; }
+.aoyunlan-wrapper .logowrapper, .aoyunlan-wrapper .logowrapper-h { height: 59px; line-height: 59px; }
+.aoyunlan-wrapper .logowrapper { font-size: 26px; font-weight: bold; color: #feeeee; text-shadow: 0 1px 1px #003777; }
+.aoyunlan-wrapper .main-nav { background: none; border: 0 none; }
+.aoyunlan-wrapper .main-nav-list { display: -webkit-box; }
+.aoyunlan-wrapper .main-nav-list li { float: none; }
+.aoyunlan-wrapper .module .module-t { background: url(http://3gimg.qq.com/wap30/img/info3/olympic_t_bg.jpg) no-repeat, url(http://3gimg.qq.com/wap30/img/info3/olympic_t_bg2.jpg) repeat-x; border: 0 none; height: 31px; line-height: 31px; }
+.aoyunlan-wrapper .module-t h3 a, .aoyunlan-wrapper .module .module-t .more a { color: white; }
+.aoyunlan-wrapper .module-t h3 { color: #294D8D; }
+.aoyunlan-wrapper .cont-list li { max-width: 100%; }

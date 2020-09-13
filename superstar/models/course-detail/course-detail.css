@@ -1,0 +1,36 @@
+body{
+	background-color: #FFFFFF;
+}
+
+.mui-control-content {
+	background-color: white;
+	min-height: 215px;
+}
+.mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+
+.class-message{
+	margin-top: 12px;
+	margin-right: 6px;
+}
+
+.class-img{
+	width: 100%;
+}
+
+.mui-card .mui-control-content {
+	padding: 10px;
+}
+
+.mui-control-content {
+	height: 150px;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-group .mui-slider-item {
+    border-bottom: 0px solid #c8c7cc;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-group .mui-slider-item {
+    height: 360px;
+}

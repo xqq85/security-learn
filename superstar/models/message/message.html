@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="message.css"/>
+		<script src="../../js/mui.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a id="menu" class="mui-action-menu mui-icon mui-icon-plusempty mui-pull-right" href="#topPopover"></a>
+		    <h1 class="mui-title">消息</h1>
+		</header>
+		<div class="search mui-indexed-list-search mui-input-row mui-search">
+			<input type="search" class="mui-input-clear mui-indexed-list-search-input" 
+				placeholder="" data-input-clear="1" data-input-search="1">
+			<span class="mui-icon mui-icon-clear mui-hidden"></span>
+			<span class="mui-placeholder">
+				<span class="mui-icon mui-icon-search"></span>
+				<span>搜索</span>
+			</span>
+		</div>
+		
+		<div class="">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../../images/xiaoxi.png">
+			            <div class="address">
+			                通讯录
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../../images/shoujianxiang.png">
+			            <div class="address">
+			                <span class="list-nickname">收件箱</span><span class="list-time">刚刚</span>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../../images/kecheng.png">
+			            <div class="mui-media-body">
+			                <span class="list-nickname">计算机网络与应用</span><span class="list-time">04-26</span>
+			                <p class="mui-ellipsis">钱晓明:[签到]</p>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../../images/yzxx.png">
+			            <div class="address">
+			                <span class="list-nickname">验证消息</span><span class="list-time">2017-01-01</span>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../../images/hfwd.png">
+			            <div class="address">
+			                回复我的
+			            </div>
+			        </a>
+			    </li>
+			</ul>
+		</div>
+		
+		<!--右上角弹出菜单-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#">新建群聊</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">建文件夾</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">批量编辑</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+		<script src="message.js"></script>
+	</body>
+</html>

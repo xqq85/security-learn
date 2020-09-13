@@ -1,0 +1,32 @@
+html,body{
+	background-color: #FFFFFF;
+}
+
+.bank{
+	height: 20px;
+	padding-left: 15px;
+	padding-top: 3px;
+	background-color: #efeff4;
+}
+h5{
+	margin: 0px;
+}
+.mui-content{
+	background-color: #ffffff;
+}
+.button{
+	margin-top: 10px;
+	
+}
+#button1{
+	display: block;
+	margin: auto;
+}
+.theme{
+	width: 40% !important;
+	float: left !important;
+}
+
+.mui-input-row label {
+    padding: 11px 25px;
+}

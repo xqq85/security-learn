@@ -1,0 +1,22 @@
+body{
+	background-color: #fff;
+}
+.complete{
+	margin-top: 11.5px;
+}
+
+.notes-title{
+	margin-top: 44px;
+}
+  
+.mui-input-group:after {
+    height: 0px;
+}
+
+.mui-input-group .mui-input-row:after {
+    height: 0px;
+}
+
+#textarea{
+	border: 0px;
+}

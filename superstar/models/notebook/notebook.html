@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../common/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="notebook.css"/>
+		<script src="../../common/mui.js"></script>
+		<script src="../../common/jquery-1.11.0.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-icon mui-icon-compose mui-pull-right" id="person-notes"></a>
+		    <h1 class="mui-title">我的</h1>
+		</header>
+		<ul class="mui-content mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="../../img/book.png">
+					<span class="mui-media-object">笔记本</span>
+					<span class="mui-media-object mui-icon mui-icon-camera mui-pull-right"></span>
+					<span class="mui-media-object mui-icon mui-icon-mic mui-pull-right"></span>
+				</a>
+			</li>
+		</ul>
+		
+		<div id="notebooks">
+		<div class='mui-card'>
+				<div class='mui-card-header mui-card-media'>
+					<img src='../../img/mine.png' />
+					<div class='mui-media-body'>
+						小M
+						<p>2020-05-11 17:40</p>
+					</div>
+				</div>
+				<div class='notes'>
+					<div><b>123</b></div>
+					<div>
+						<p>123456</p>
+					</div>
+				</div>
+				<div class='mui-card-footer'>
+					<a class='mui-card-link'>评论</a>
+					<a class='mui-card-link'>赞</a>
+					<a class='mui-card-link'>转发</a>
+				</div>
+		</div>
+		
+		</div>
+		<script>
+		//添加notebook-text自定义事件监听
+		window.addEventListener('notebook-text',function(event){
+			//获得事件参数
+			var titleInput = event.detail.titleInput;
+			var textInput = event.detail.textInput;
+			//alert("笔记"+titleInput+textInput);
+			var notebook = "<div class='mui-card'>"+
+				"<div class='mui-card-header mui-card-media'>"+
+					"<img src='../../img/mine.png' />"+
+					"<div class='mui-media-body'>"+
+						"小M"+
+						"<p>2020-05-11 17:40</p>"+
+					"</div>"+
+				"</div>"+
+				"<div class='notes'>"+
+					"<div><b>"+
+					titleInput+
+					"</b></div>"+
+					"<div><p>"+
+						textInput+
+						"</p>"+
+					"</div>"+
+				"</div>"+
+				"<div class='mui-card-footer'>"+
+					"<a class='mui-card-link'>评论</a>"+
+					"<a class='mui-card-link'>赞</a>"+
+					"<a class='mui-card-link'>转发</a></div></div>";
+			$("body").append(notebook);
+		});
+		</script>
+		<script src="notebook.js"></script>
+	</body>
+</html>

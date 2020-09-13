@@ -1,0 +1,47 @@
+.mui-table-view{
+	margin-bottom: 25px;
+}
+
+/*已保护样式*/
+.safe-status{
+	float: right;
+	margin-right: 20px;
+	font-size: 14px;
+	color: gray;
+	height: 16px;
+}
+
+.safe-status img{
+	height: 100%;
+	margin-right: 5px;
+}
+.safe-status *{
+	vertical-align: middle;
+}
+
+
+
+/*修改actionsheet样式*/
+.mui-popover.mui-popover-action .mui-table-view {
+    margin: 0;
+    color: #0e0e0e;
+    border-radius: 0;
+}
+
+.loginout-tip{
+	font-size: 14px;
+    color: gray;
+}
+
+#loginout{
+	color:#da4442;
+}
+
+.cancel-box{
+	margin-top: 5px!important;
+}
+
+
+#sheet{
+	background-color: #e8e8ee;
+}

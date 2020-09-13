@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>detail_notice</title>
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="notice.css" />
+		<style>
+			.mui-content>h3 {
+				text-align: center;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			
+			.mui-content {
+				background-color: #FFFFFF;
+			}
+			
+			.mui-content>div>span {
+				margin-left: 35px;
+			}
+			
+			hr,
+			.message {
+				width: 84%;
+				overflow: hidden;
+				margin-left: 35px;
+			}
+			
+			#publisher{
+				position: relative;
+				left: 15px;
+			}
+			#title{
+				position: relative;
+				left: 34px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<!--<a class="mui-icon mui-icon-reload mui-pull-right" id="refresh"><div style="margin:-18px 10px 10px 30px; font: '楷体';font-size: 18px;">刷新</div></a>-->
+			<h1 class="mui-title">通知公告详情</h1>
+		</header>
+		<div class="mui-content">
+			<h3 id="notice_title"></h3>
+			<!--<span>标题:</span>&nbsp;&nbsp;&nbsp;<span id="notice_title"></span>
+			<br>
+
+			<span>编辑者工号:</span>&nbsp;&nbsp;&nbsp;<span id="guide_editor"></span>
+			<br>-->
+			<div>
+				<span>发布者:</span>
+				<span id="publisher"></span>
+			</div>
+			<div>
+				<span>发布时间:</span>
+				<span id="publish_time"></span>
+			</div>
+			<hr>
+			<div>
+				<span>标题:</span>
+				<span id="title"></span>
+			</div>
+			<hr>
+			<div class="message">
+				<div>
+					<span style="border-left:20px;">内容:</span>
+					<div>
+						<span id="notice">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/app.js"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				$.plusReady(function() {
+					//					var title = document.getElementById('title');
+					var notice_id = document.getElementById('notice_id');
+					var publisher = document.getElementById('publisher');
+					var notice = document.getElementById('notice');
+					var title = document.getElementById('title');
+					var publish_time = document.getElementById('publish_time');
+
+					//获取前一个页面传过来的值
+					var self = plus.webview.currentWebview(); //必须用plusReady 来获取前面传过来的值
+					//					var notice_id_infor =self.notice_id;
+					var publisher_infor = self.name;
+					var notice_infor = self.notice;
+					var notice_title_infor = self.notice_title;
+					var notice_time = self.notice_time;
+					//					plus.nativeUI.toast(notice_title_infor)
+
+					//					notice_id.innerHTML=notice_id_infor;
+					publisher.innerHTML = publisher_infor;
+					notice.innerHTML = notice_infor;
+					title.innerHTML = notice_title_infor;
+					publish_time.innerHTML = notice_time;
+
+				})
+			}(mui, document))
+		</script>
+
+	</body>
+
+</html>

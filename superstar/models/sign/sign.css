@@ -1,0 +1,19 @@
+.mui-content {
+    padding-top: 60px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sign-label{
+	background-color: #FFFFFF;
+	padding: 10px;
+	border: solid 1px gray;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#sign-in{
+	margin-top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}

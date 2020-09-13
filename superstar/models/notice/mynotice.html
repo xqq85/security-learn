@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>mynotice</title>
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<style>
+			body {
+				background-color:#efeff4;
+			}
+		   
+		</style>
+	</head> 
+	<body>
+		<header class="mui-bar mui-bar-nav">		 
+			 <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			 <!--<a class="mui-icon mui-icon-reload mui-pull-right" id="refresh"><div style="margin:-18px 10px 10px 30px; font: '楷体';font-size: 18px;">刷新</div></a>-->
+			<h1 class="mui-title">我的公告记录</h1>		
+		</header>
+		
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view mui-table-view-chevron" id="list">
+					
+				</ul>
+			</div>		
+		</div>
+		
+		
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/app.js"></script>
+		<script>
+		(function($,doc){
+			mui.init({
+				pullRefresh:{
+					container:'#pullrefresh',
+					up:{
+						contentrefresh:'正在加载...',
+						callback:pullupRefresh
+					}
+				}
+			});
+			var list = document.getElementById("list")
+			var count = -1;
+			function pullupRefresh(){
+				count = count+1
+				var user_info = JSON.parse(localStorage.getItem('$state'));
+				setTimeout(function(){
+					mui.ajax({
+						type:"post",
+//						url:"http://192.168.191.1:8080/baosteelpipe/Mynotice",
+						url:"http://192.168.0.115:8000/notice_app/mynotice_interface/",
+						data:{
+							"pull_count":count,
+							"author":user_info.account
+						},
+						async:true,
+						dataType:"json",
+						success:function(data){
+							mui('#pullrefresh').pullRefresh().endPullupToRefresh((data ==""||null));
+							mui.each(data,function(key,value){
+							var li = document.createElement("li")
+							li.className="mui-table-view-cell";
+							li.setAttribute("notice_id",value.pk);
+							li.setAttribute("author",value.fields.author);
+							li.setAttribute("notice",value.fields.text);
+							li.setAttribute("notice_title",value.fields.title);
+							li.setAttribute("notice_time",value.fields.created);
+							
+							value.fields.created = value.fields.created.substring(0,10)
+                            li.innerHTML ='<a class="mui-navigate-right"'+"<br>"+"标题："+value.fields.title+"<br>"+ "发布者："+value.fields.author+"&nbsp&nbsp"+"编辑时间："+value.fields.created +'</a>';
+                                                        
+                            list.appendChild(li)
+							})
+							
+							mui("#list").on('tap','li',function(){
+								var notice_id = this.getAttribute("notice_id")
+								var publisher = this.getAttribute("author")
+								var notice = this.getAttribute("notice")
+								var notice_title = this.getAttribute("notice_title")
+								
+								mui.openWindow({
+							    url:"notice_edit.html",
+							    id:"notice_edit",
+							
+							    
+							    extras:{
+							    	notice_id:notice_id,
+							    	publisher:publisher,
+							    	notice:notice,
+							    	notice_title:notice_title,
+							    	
+							    }
+							    
+							})
+		                  });	
+							
+						},
+						
+					});
+					
+				},100);
+			}
+			
+			if (mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#pullrefresh').pullRefresh().pullupLoading();
+					}, 1000);
+
+				});
+			} else {
+				mui.ready(function() {
+					mui('#pullrefresh').pullRefresh().pullupLoading();
+				});
+			}			
+			
+
+		}(mui,document))
+		</script>
+	</body>
+</html>

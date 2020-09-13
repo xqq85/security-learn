@@ -1,0 +1,17 @@
+.mui-table-view-cell > a:not(.mui-btn) {
+    margin: -11px -20px;
+}
+
+.mui-card {
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.notes{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.mui-card-header:after{
+    height: 0px;
+}

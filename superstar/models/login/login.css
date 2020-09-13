@@ -1,0 +1,29 @@
+body{
+	background-color: #FFFFFF;
+}
+.service{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.login{
+	margin-top: 80px;
+}
+.mui-content-padded{
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+.mui-input-group:after,.mui-input-group:before{
+	height: 0;
+}
+.account{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.other{
+	margin-top: 220px;
+}
+.agreement{
+	margin-top: 30px;
+}

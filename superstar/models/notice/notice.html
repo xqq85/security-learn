@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>selfsetting</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css">
+		<link rel="stylesheet" type="text/css" href="notice.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">通知公告</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a id="noticelist" href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../images/kecheng.png">
+						<div class="address mui-navigate-right">
+							公告通知
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a id="new_notice" href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../images/shoujianxiang.png">
+						<div class="address mui-navigate-right">
+							新建公告通知
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a id="mynotice" href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../images/hfwd.png">
+						<div class="address mui-navigate-right">
+							我的公告记录
+						</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init();
+		mui.ready(function() {
+			//新建通知公告
+			document.getElementById("new_notice").addEventListener('tap', function() {
+				mui.openWindow({
+					url: "new_notice.html",
+					id: "new_notice",
+				})
+			});
+			//我的公告记录
+			document.getElementById("mynotice").addEventListener('tap', function() {
+				mui.openWindow({
+					url: "mynotice.html",
+					id: "mynotice",
+				})
+			})
+			//公告列表
+			document.getElementById("noticelist").addEventListener('tap', function() {
+				mui.openWindow({
+					url: "noticelist.html",
+					id: "noticelist",
+				})
+			})
+		})
+	</script>
+
+</html>
