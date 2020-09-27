@@ -1,0 +1,39 @@
+body {
+	background-color: #FFFFFF;
+}
+
+ul {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+li {
+	list-style-type: none;
+	/*去掉li前面的小黑点*/
+}
+
+.content {
+	margin-left: 10px;
+}
+
+#uploadForm {
+	margin-top: -10px;
+	margin-top: 10px;
+}
+
+.mui-content {
+	background-color: #FFFFFF;
+}
+
+.min-size {
+	font-size: 13px;
+	color: gray;
+}
+
+#textarea {
+	margin-bottom: 0px;
+}
+
+.mid-size {
+	font-size: 18px;
+}

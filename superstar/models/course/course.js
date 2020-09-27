@@ -39,8 +39,14 @@ mui('#topPopover').on('tap', 'a', function(e) {
 
 	//关闭顶部弹出框
 	mui('#topPopover').popover('toggle');
-
-	if(id == "002") {
+	
+	if(id == "001") {
+		//打开数据存储页面  
+		mui.openWindow({
+			url: '../data-storage/data-storage.html',
+			id: 'data-storage'
+		});
+	} else if(id == "002") {
 		//打开写文章页面  
 		mui.openWindow({
 			url: '../post-course/post-course.html',

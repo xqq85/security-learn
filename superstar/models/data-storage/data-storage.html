@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+		<title></title>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="x5-page-mode" content="no-title" />
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<link href="data-storage.css" rel="stylesheet" />
+		<script src="../../js/mui.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">data-storage</h1>
+		</header>
+		<div class="mui-content">
+			<label class="content">内容</label>
+			<div class="mui-input-row" style="margin: 10px 5px;">
+				<textarea id="textarea" rows="6" placeholder="请填写正文"></textarea>
+			</div>
+			<hr />
+			<form id="uploadFile">
+				<label class="content mid-size">上传文档</label>
+				<input id="file_up" class="content" type="file" name="file" style="" />
+				<br/>
+				<label class="content min-size">上传文档【小于5M】</label>
+				<button id="cancel_file" type="button" style="margin-top: 25px; margin-left: 12px; height: 30px; width: 85px; background-color:skyblue">撤销文档</button>
+			</form>
+			<hr />
+			<form id="uploadImage">
+				<label class="content mid-size">上传图片</label>
+				<input id="image_up" class="content" type="file" name="file" style="" />
+				<br/>
+				<label class="content min-size">上传图片【小于5M】</label>
+				<button id="cancel_image" type="button" style="margin-top: 25px; margin-left: 12px; height: 30px; width: 85px; background-color:skyblue">撤销图片</button>
+			</form>
+			<hr/>
+			<div>
+				<div class="mui-button-row">
+					<button id="newgather_submit" class="mui-btn mui-btn-primary" type="button" onclick="return true;">提交</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button id="newgather_cancel" class="mui-btn mui-btn-danger" type="button" onclick="return false;">取消</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="data-storage.js"></script>
+
+</html>
